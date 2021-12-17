@@ -1,0 +1,21 @@
+### creat new user
+POST http://localhost:3000/auths/register
+Content-Type: application/json
+
+{
+    "username":"test001",
+    "password":"test001"
+   
+}
+### login tets
+POST http://localhost:3000/auths/login
+Content-Type: application/json
+
+{
+    "username":"test001",
+    "password":"test001"
+}
+
+### GET TEST
+GET http://localhost:3000/auths/x
+

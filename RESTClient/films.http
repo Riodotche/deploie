@@ -1,0 +1,67 @@
+### read all pizzas
+
+GET http://localhost:3000/films
+
+### Creat a film
+POST http://localhost:3000/films
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImQiLCJpYXQiOjE2MzQ4MDY4NjUsImV4cCI6MTcyMTIwNjg2NX0.K6HrWS0VM-FWU6Dr0laTb_5GbAEEEJIJLqqTLgA2aXUb
+
+{
+    "title":"nouvou",
+    "duration":140,
+    "budget":1000,
+    "link":"www.linl.be"
+}
+### creer un film sans autorisation
+POST http://localhost:3000/films
+Content-Type: application/json
+
+{
+     "title":"nouvou",
+    "duration":140,
+    "budget":1000,
+    "link":"www.linl.be"
+}
+
+### creer un film avec une token invalide
+POST http://localhost:3000/films
+Content-Type: application/json
+Authorization: "sss"
+
+{
+    "title":"nouvou",
+    "duration":140,
+    "budget":1000,
+    "link":"www.linl.be"
+}
+
+
+### Creat a film
+POST http://localhost:3000/films
+Content-Type: application/json
+
+{
+    "title":"film 4",
+    "duration":90,
+    "budget":800,
+    "link":"www.linl.be"
+}
+
+### delete one
+DELETE http://localhost:3000/films/3
+Authorization:  eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImQiLCJpYXQiOjE2MzQ4MTE1MDgsImV4cCI6MTcyMTIxMTUwOH0.Gmct-ysXsd98ZR5ZyzQbzgAaEAOYhPeqLDY9s7hveg8
+
+### update one film
+
+PUT http://localhost:3000/films/3
+Content-Type: application/json
+
+{
+    "title":"changer",
+    "duration":140,
+    "budget":1000,
+    "link":"www.link.be"
+}
+
+

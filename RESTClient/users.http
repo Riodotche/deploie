@@ -1,0 +1,15 @@
+### get users
+GET http://localhost:3000/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3QiLCJpYXQiOjE2MzY1MzQ1OTcsImV4cCI6MTcyMjkzNDU5N30.ogygvpxv_ho1uPDKA40Bb85IBwWKQ1LJeBQDJZRXitw
+
+### change user info
+
+PUT http://localhost:3000/users/daniel
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRhbmllbCIsImlhdCI6MTYzNjYzNDA4MSwiZXhwIjoxNzIzMDM0MDgxfQ.UDDUthIV9CWE-qgvwdwS00PSsbdUhYAWEWu-a8fxiMM
+
+{
+    "username":"test001",
+    "password":"test001",
+    "role":"utilisateur"
+}
